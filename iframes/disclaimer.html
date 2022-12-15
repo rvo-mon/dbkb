@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js'
+    integrity='sha256-0OcjjB7oKWCwru7gzilCYvXgTE9augkyvMI0WFC1ODg=' crossorigin='anonymous'></script>
+</head>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "RO Sans", Calibri, sans-serif;
+    font-size: 17px;
+    color: #212529;
+    line-height: 1.5;
+  }
+
+  .disclaimer {
+    padding: 40px;
+    background-color: #fff8e1;
+    position: relative;
+    box-shadow: 0 4px 6px 0 hsl(0deg 0% 0% / 3%);
+  }
+
+  .close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+
+  .close:hover {
+    opacity: 1;
+  }
+
+  .close:before,
+  .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+
+  .close:before {
+    transform: rotate(45deg);
+  }
+
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+
+  /* TYPOGRAPHY */
+  @font-face {
+    font-family: "RO Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("/css/fonts/RO-SansWebText-Regular.woff") format("opentype"), url("fonts/RO-SansWebText-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "RO Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-display: auto;
+    src: url("/css/fonts/RO-SansWebText-Bold.woff") format("opentype"), url("fonts/RO-SansWebText-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "RO Serif";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("/css/fonts/RO-SerifWeb-Italic.woff") format("opentype"), url("fonts/RO-SerifWeb-Italic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "RO Icons";
+    font-style: normal;
+    font-weight: bold;
+    font-display: auto;
+    src: url("/css/fonts/ro-icons-1.11.woff") format("opentype"), url("fonts/ro-icons-1.11.ttf") format("truetype");
+  }
+</style>
+
+<body>
+  <div class="disclaimer">
+    <div onclick="frameElement.parentNode.removeChild(frameElement)">
+      <a href="#" class="close"></a>
+    </div>
+    <h2 style="margin:0"">Mockup</h2>
+    <p>Je kijkt naar een <a target=" _blank" href="https://nl.wikipedia.org/wiki/Mock-up">mockup</a> van het
+      onderdeel
+      Energiesysteem voor op het Dashboard Klimaatbeleid. Doel is hiermee wensen, ideeën en mogelijkheden voor de
+      doorontwikkeling
+      te verkennen en het proces van onderlinge afstemming daarover te ondersteunen. Hierbij zijn de volgende
+      algemene
+      aandachtspunten van toepassing:
+      </p>
+      <ul style="padding-top:0px">
+        <li>De uiteindelijk op het dashboard te implementeren content kan in vormgeving en functionaliteit afwijken
+          van
+          de mockup. Wat je in deze mockup ziet
+          dient nog nader te worden getoetst op twee aspecten:
+          <ul style="margin:0px;padding-top:5px;padding-bottom:5px">
+            <li>Compatibiliteit met het softwareplatform van ABF.
+            </li>
+            <li>Beheersbaarheid van de updatecyclus op doorlooptijd en achtervang.</li>
+          </ul>
+        </li>
+        <li>De mockup wordt stapsgewijs uitgewerkt. Bekijk het <a target="_blank" href="/changelog.html">veranderlog</a>
+          voor
+          een overzicht van aanpassingen en aanvullingen.</li>
+        <li>In de mockup wordt deels gebruik gemaakt van dummydata. De getoonde informatie is daarom
+          nog veelal willekeurig of onvolledig en daarom niet geschikt voor werkelijk gebruik.</li>
+      </ul>
+      <p>Neem voor vragen en suggesties contact op met Tijs Langeveld via
+        tijs.langeveld[apenstaartje]rvo.nl of 06
+        25 27 06 81.</p>
+  </div>
+</body>
+
+</html>

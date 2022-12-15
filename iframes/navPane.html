@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<style>
+  /* TYPOGRAPHY */
+  @font-face {
+    font-family: "RO Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("/css/fonts/RO-SansWebText-Regular.woff") format("opentype"), url("fonts/RO-SansWebText-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "RO Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-display: auto;
+    src: url("/css/fonts/RO-SansWebText-Bold.woff") format("opentype"), url("fonts/RO-SansWebText-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "RO Serif";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("/css/fonts/RO-SerifWeb-Italic.woff") format("opentype"), url("fonts/RO-SerifWeb-Italic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "RO Icons";
+    font-style: normal;
+    font-weight: bold;
+    font-display: auto;
+    src: url("/css/fonts/ro-icons-1.11.woff") format("opentype"), url("fonts/ro-icons-1.11.ttf") format("truetype");
+  }
+
+  body {
+    margin: 0;
+    font-family: "RO Sans", Calibri, sans-serif;
+    font-size: 17px;
+    /* color: #212529; */
+    line-height: 1.5;
+
+  }
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  .wrap-collabsible {
+    margin: 1.2rem 0;
+  }
+
+  .lbl-toggle {
+    display: block;
+    margin-left: 20px;
+    padding: 1rem;
+    color: #000;
+    /* background: #0069ff; */
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+    font-size: 20px;
+  }
+
+  .lbl-toggle:hover {
+    /* color: #FFF; */
+    font-weight: 800;
+  }
+
+  .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid currentColor;
+    vertical-align: middle;
+    margin-right: 1rem;
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+  }
+
+  .toggle:checked+.lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+  .toggle:checked+.lbl-toggle+.collapsible-content {
+    max-height: 350px;
+  }
+
+  .toggle:checked+.lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .collapsible-content .content-inner {
+    /* background: rgba(0, 105, 255, .2); */
+    /* border-bottom: 1px solid rgba(0, 105, 255, .45); */
+    margin-left: 60px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .1rem 1rem;
+    font-size: 19px;
+  }
+
+  .content-inner :hover {
+    /* color: #FFF; */
+    font-weight: 800;
+  }
+
+  .collapsible-content p {
+    margin-bottom: 0;
+  }
+
+  #navigatieMenu {
+    position: -webkit-sticky;
+    float: right;
+    position: sticky;
+    background-color: white;
+    width: 290px;
+    top: 20px;
+  }
+
+
+  a:link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+
+<body>
+
+  <div id="navigatieMenu">
+    <p style="margin-left:30px; margin-top:40px; font-weight:800; font-size:22px;"><a href="/index.html"
+        target="_parent">Thema Energiesysteem</a></p>
+    <!-- Energieproductie -->
+    <div class="wrap-collabsible"> <input id="collapsible1" class="toggle" type="checkbox"> <label for="collapsible1"
+        class="lbl-toggle">Energieproductie</label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <p><a href="/pages/energieproductie/elektriciteit.html" target="_parent">Elektriciteit</a></p>
+        </div>
+        <div class=" content-inner">
+          <p style="color:#999"><a href="/pages/energieproductie/gas.html" target="_parent">Gas</a></p>
+        </div>
+        <div class=" content-inner">
+          <p style="color:#999"><a href="/pages/energieproductie/warmte.html" target="_parent">Warmte</a></p>
+        </div>
+        <div class="content-inner">
+          <p style="color:#999"><a href="/pages/energieproductie/motorbrandstoffen.html"
+              target="_parent">Motorbrandstoffen</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Energiebalans -->
+    <div class="wrap-collabsible"> <input id="collapsible2" class="toggle" type="checkbox" checked> <label
+        for="collapsible2" class="lbl-toggle">Energiebalans</label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <p><a href="/pages/energiebalans/elektriciteitsnet.html" target="_parent">Elektriciteitsnet</a></p>
+        </div>
+        <div class="content-inner">
+          <p style="color:#999"><a href="/pages/energiebalans/gasnet.html" target="_parent">Gasnet</a></p>
+        </div>
+        <div class="content-inner">
+          <p style="color:#999"><a href="/pages/energiebalans/opslagflex.html" target="_parent">Opslag & Flex</a></p>
+        </div>
+        <div class="content-inner">
+          <p style="color:#999"><a href="/pages/energiebalans/importexport.html" target="_parent">Import & Export</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Energieverbruik -->
+    <div class="wrap-collabsible"> <input id="collapsible3" class="toggle" type="checkbox" checked> <label
+        for="collapsible3" class="lbl-toggle">Energieverbruik</label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <p style="color:#999"><a href="/pages/energieverbruik/gebouwdeomgeving.html" target="_parent">Gebouwde
+              omgeving</a></p>
+        </div>
+        <div class="content-inner">
+          <p style="color:#999"><a href="/pages/energieverbruik/mobiliteit.html" target="_parent">Mobiliteit</a></p>
+        </div>
+        <div class="content-inner">
+          <p style="color:#999"><a href="/pages/energieverbruik/industrie.html" target="_parent">Industrie</a></p>
+        </div>
+        <div class="content-inner">
+          <p style="color: #999; margin-bottom:30px"><a href="/pages/energieverbruik/glastuinbouw.html"
+              target="_parent">Glastuinbouw</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
