@@ -1,22 +1,72 @@
-!
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Redirect</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
-  <head>
-    <meta http-equiv='refresh' content='0; URL=/index.html'>
-  </head>
+  <title>Energiesysteem</title>
+
+  <link type="text/css" rel="stylesheet" href="/css/pages.css">
+  <!-- <script src="js/custom.js"></script> -->
+  <!-- <link rel='stylesheet' type='text/css' href='css/common.css'> -->
+  <!-- <link rel="stylesheet" href="css/leaflet.css"> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js'
+    integrity='sha256-0OcjjB7oKWCwru7gzilCYvXgTE9augkyvMI0WFC1ODg=' crossorigin='anonymous'></script>
+  <!-- <script src="js/leaflet.js"></script> -->
+  <style>
+
+  </style>
+
 </head>
 
+
 <body>
-  <p><a href="/dbkb/index.html">U wordt doorverwezen.</a></p>
+  <div id="header">
+    <div style="position:relative; top:0px; left: 50%;">
+      <img alt="Logo Rijksoverheid" src="/assets/logo.svg">
+    </div>
+    <div style="background-color:#01689B; height:72px; "></div>
+  </div>
+
+  <div class="contentContainer">
+    <div class="leftPane">
+
+      <div id="navigatieMenuContainer">
+        <iframe src="/iframes/navPane.html" width="290px" height="1200px" title="Navigatiemenu"
+          style="margin:0;border:none;"></iframe>
+      </div>
+
+    </div>
+    <div class="middlePane">
+      <!-- <iframe src="/iframes/disclaimer.html" width="1140px" height="500px" style="margin:0px;border:none;"></iframe> -->
+
+
+      <div class=" row introduction wordskip">
+        <h2>Veranderlog</h2>
+        <table style="width:100%">
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+    <div class="rightPane"></div>
+
 </body>
 
 </html>
