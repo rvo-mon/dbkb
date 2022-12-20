@@ -54,6 +54,8 @@
 #header {
   background-color: white;
   height: 205px;
+  width: 100%;
+  position: relative;
 }
 
 
@@ -65,10 +67,16 @@ html,
 body {
   padding: 0;
   margin: 0;
-  min-width: 1140px;
-  max-width: 100%;
+  /* position: absolute */
+  /* min-width: 1140px; */
+  width: 100%;
   overflow-x: hidden;
   /* min-height: 9000px; */
+  margin: 0;
+  font-family: "RO Sans", Calibri, sans-serif;
+  font-size: 17px;
+  color: #212529;
+  line-height: 1.5;
 }
 
 text {
@@ -186,15 +194,6 @@ button {
   src: url("fonts/ro-icons-1.11.woff") format("opentype"), url("fonts/ro-icons-1.11.ttf") format("truetype");
 }
 
-
-
-body {
-  margin: 0;
-  font-family: "RO Sans", Calibri, sans-serif;
-  font-size: 17px;
-  color: #212529;
-  line-height: 1.5;
-}
 
 p {
   margin-top: 0;

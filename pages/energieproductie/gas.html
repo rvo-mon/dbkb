@@ -14,7 +14,15 @@
   <!-- <link rel="stylesheet" href="css/leaflet.css"> -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js'
     integrity='sha256-0OcjjB7oKWCwru7gzilCYvXgTE9augkyvMI0WFC1ODg=' crossorigin='anonymous'></script>
-  <!-- <script src="js/leaflet.js"></script> -->
+
+  <!-- LEAFLET -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <!-- XLSX -->
+  <script src="../../iframes/waterstofOntwikkeling/xlsx.mini.min.js"></script>
+  <script src="../../assets/scale.js"></script>
   <style>
 
   </style>
@@ -27,10 +35,10 @@
     <div style="position:relative; top:0px; left: 50%;">
       <img alt="Logo Rijksoverheid" src="../../assets/logo.svg">
     </div>
-    <div style="background-color:#01689B; height:72px; "></div>
+    <div style="background-color:#01689B; height:72px; width:100%; position: absolute; "></div>
   </div>
 
-  <div class="contentContainer">
+  <div class="contentContainer" id="contentContainer">
     <div class="leftPane">
 
       <div id="navigatieMenuContainer">
@@ -40,16 +48,23 @@
 
     </div>
     <div class="middlePane">
-      <!-- <iframe src="/iframes/disclaimer.html" width="1140px" height="500px" style="margin:0px;border:none;"></iframe> -->
+      <iframe src="../../iframes/disclaimer.html" width="1140px" height="500px"
+        style="margin:0px;border:none;"></iframe>
 
 
-      <div class=" row introduction wordskip">
-        <h2>Dit onderdeel wacht nog op uitwerking</h2>
-        <p>Heb je ideeën of wensen bij wat je op dit subthema of onderwerp
-          behandeld
-          wilt zien? Neem dan contact op met Tijs Langeveld via tijs.langeveld[apenstaartje]rvo.nl of bel 06 25 27 06
-          81.
-        </p>
+      <div class="row introduction wordskip">
+        <h2>Routekaart waterstof</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam culpa inventore nulla quasi ducimus
+          natus quod quisquam similique nobis corporis incidunt maxime, excepturi doloribus tenetur, exercitationem,
+          doloremque labore est eaque quia illum sapiente alias eius? Iure ipsam mollitia dignissimos!</p>
+      </div>
+
+      <iframe src="../../iframes/waterstofOntwikkeling/waterstofOntwikkeling.html" width="1140px" height="780px"
+        style="margin:0px;border:none;"></iframe>
+
+
+      <div class="row introduction wordskip">
+        <p>content</p>
       </div>
 
     </div>
