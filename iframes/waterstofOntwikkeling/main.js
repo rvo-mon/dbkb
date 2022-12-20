@@ -76,7 +76,6 @@ function drawMap () {
     return { color: '#6effff', stroke: true, weight: 2, opacity: 0.9, dashArray: '2 5' }
   }
 
-
   let zwaartepunten = []
 
   function drawGraphElements () {
@@ -134,7 +133,7 @@ function drawMap () {
       .text('Projectenpijplijn')
 
     svg.append('line')
-      .attr('x1', 160).attr('x2', 300)
+      .attr('x1', 160).attr('x2', 700)
       .attr('y1', 95).attr('y2', 95)
       .attr('stroke', 'white')
 
