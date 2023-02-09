@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <title>Energiesysteem</title>
+
+  <!-- <script src="js/custom.js"></script> -->
+  <!-- <link rel='stylesheet' type='text/css' href='css/common.css'> -->
+  <link rel="stylesheet" href="css/pages.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js'
+    integrity='sha256-0OcjjB7oKWCwru7gzilCYvXgTE9augkyvMI0WFC1ODg=' crossorigin='anonymous'></script>
+  <!-- <script src="js/leaflet.js"></script> -->
+  <style>
+
+  </style>
+
+</head>
+
+
+<body>
+  <div id="header">
+    <div style="position:relative; top:0px; left: 50%;">
+      <img alt="Logo Rijksoverheid" src="assets/logo.svg">
+    </div>
+    <div style="background-color:#01689B; height:72px; "></div>
+  </div>
+
+
+
+  <div class="contentContainer">
+    <div class="leftPane">
+
+      <div id="navigatieMenuContainer">
+        <iframe src="iframes/navPane.html" width="290px" height="1200px" title="Navigatiemenu"
+          style="margin:0;border:none;"></iframe>
+      </div>
+
+    </div>
+    <div class="middlePane">
+      <iframe src="iframes/disclaimer.html" width="1140px" height="500px" style="margin:0px;border:none;"></iframe>
+
+
+      <div class=" row introduction wordskip">
+        <div id="contentContainer_Sankey" style="width:100%; position: relative; margin-bottom:-180px">
+          <h2>Over het thema Energiesysteem</h2>
+          <p style="column-count:2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium obcaecati
+            provident aliquam. Molestiae in veniam magni ad, iusto eveniet perspiciatis velit aliquid aliquam earum cum
+            suscipit error provident perferendis iure saepe iste dolore ratione? At, nam incidunt? Recusandae harum
+            exercitationem ut eius nihil, nam architecto, quas quasi eaque omnis quo hic minima animi sint molestiae
+            reiciendis laudantium ratione reprehenderit eum ad natus, voluptates non. Vel, corrupti, voluptate
+            laudantium
+            ad animi nostrum aspernatur reiciendis, ipsam provident natus dolores eaque ratione? Numquam aspernatur odio
+            quo, sunt, odit officia earum quia ad libero mollitia minus officiis distinctio consequuntur sint fuga
+            explicabo? Mollitia, veritatis!</p>
+        </div>
+        <div id="sitemapOnderdelenEnergiesysteem" style="margin-bottom:60px; height:800px; width:1140px">
+
+        </div>
+      </div>
+
+
+
+      <div class=" row introduction wordskip">
+        <div id="contentContainer_Sankey" style="width:100%; position: relative">
+          <h2>Energiestromen in Nederland</h2>
+        </div>
+        <div style="margin-bottom:60px;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquid fugit cumque sed amet, id dicta
+          molestiae, modi commodi sequi blanditiis necessitatibus architecto odit ex facere vero accusantium totam
+          asperiores nihil laudantium eligendi debitis odio neque laboriosam! Illo modi, perferendis excepturi, sed cum
+          minus molestias beatae in dolore quisquam voluptates porro doloremque expedita rerum corporis iusto repellat
+          dolor ratione qui, error sequi nihil accusantium. Tenetur ea aspernatur vitae voluptatem nihil?
+        </div>
+        <p>[Sankey diagram van energiestromen op basis van CBS-statistiek - interactief met de mogelijkheid tussen jaren
+          te
+          switchen]</p>
+
+
+        <div class="box sankey" id="dynamicSankey" style="width:1060px;pointer-events: none; z-index:10000">
+          <!-- <svg width="100%"
+          height="2000px" style="pointer-events:none">
+        </svg>-->
+        </div>
+      </div>
+    </div>
+    <div class="rightPane"></div>
+
+</body>
+
+</html>
